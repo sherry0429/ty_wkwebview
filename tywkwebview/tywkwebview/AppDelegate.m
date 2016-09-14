@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "TYMainViewController.h"
 
 @interface AppDelegate ()
+
+@property(nonatomic,strong)TYMainViewController *controller;
+
 
 @end
 
@@ -17,6 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.controller = [[TYMainViewController alloc]init];
+    self.window.rootViewController = _controller;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

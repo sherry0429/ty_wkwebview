@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  TYWKWebView.h
 //  tywkwebview
 //
 //  Created by 潘天佑 on 16/9/14.
 //  Copyright © 2016年 潘天佑. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TYWKWebView : WKWebView <WKNavigationDelegate>
 
 @end
-
