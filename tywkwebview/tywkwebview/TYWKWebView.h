@@ -8,6 +8,6 @@
 
 #import <WebKit/WebKit.h>
 
-@interface TYWKWebView : WKWebView <WKNavigationDelegate>
+@interface TYWKWebView : WKWebView
 
 @end

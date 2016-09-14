@@ -11,7 +11,7 @@
 
 @interface AppDelegate ()
 
-@property(nonatomic,strong)TYMainViewController *controller;
+@property(nonatomic,strong)TYMainViewController *navigationController;
 
 
 @end
@@ -22,12 +22,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.controller = [[TYMainViewController alloc]init];
-    self.window.rootViewController = _controller;
+    self.navigationController = [[TYMainViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:_navigationController];
+    self.window.rootViewController = nav;
+    [self.window addSubview:nav.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
-
+/*
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -131,5 +133,5 @@
         }
     }
 }
-
+*/
 @end

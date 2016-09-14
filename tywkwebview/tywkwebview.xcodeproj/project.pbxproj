@@ -13,6 +13,9 @@
 		3D8C84571D8972200020AB4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8C84561D8972200020AB4A /* Assets.xcassets */; };
 		3D8C84661D897A730020AB4A /* TYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C84651D897A730020AB4A /* TYMainViewController.m */; };
 		3D8C84691D8982830020AB4A /* TYWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C84681D8982830020AB4A /* TYWKWebView.m */; };
+		3D8C846E1D898E4D0020AB4A /* TYWKMessageHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C846D1D898E4D0020AB4A /* TYWKMessageHandlers.m */; };
+		3D8C84711D898E5B0020AB4A /* TYWKConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C84701D898E5B0020AB4A /* TYWKConfiguration.m */; };
+		3D8C84741D899AA80020AB4A /* TYWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C84731D899AA80020AB4A /* TYWKWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,12 @@
 		3D8C84651D897A730020AB4A /* TYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYMainViewController.m; sourceTree = "<group>"; };
 		3D8C84671D8982830020AB4A /* TYWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWKWebView.h; sourceTree = "<group>"; };
 		3D8C84681D8982830020AB4A /* TYWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWKWebView.m; sourceTree = "<group>"; };
+		3D8C846C1D898E4D0020AB4A /* TYWKMessageHandlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWKMessageHandlers.h; sourceTree = "<group>"; };
+		3D8C846D1D898E4D0020AB4A /* TYWKMessageHandlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWKMessageHandlers.m; sourceTree = "<group>"; };
+		3D8C846F1D898E5B0020AB4A /* TYWKConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWKConfiguration.h; sourceTree = "<group>"; };
+		3D8C84701D898E5B0020AB4A /* TYWKConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWKConfiguration.m; sourceTree = "<group>"; };
+		3D8C84721D899AA80020AB4A /* TYWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWKWebViewController.h; sourceTree = "<group>"; };
+		3D8C84731D899AA80020AB4A /* TYWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 		3D8C84461D8972200020AB4A /* tywkwebview */ = {
 			isa = PBXGroup;
 			children = (
+				3D8C846B1D898E370020AB4A /* Class */,
 				3D8C846A1D8982890020AB4A /* View */,
 				3D8C84631D8973250020AB4A /* Model */,
 				3D8C84621D89731C0020AB4A /* appDelegate */,
@@ -84,6 +94,8 @@
 			children = (
 				3D8C84641D897A730020AB4A /* TYMainViewController.h */,
 				3D8C84651D897A730020AB4A /* TYMainViewController.m */,
+				3D8C84721D899AA80020AB4A /* TYWKWebViewController.h */,
+				3D8C84731D899AA80020AB4A /* TYWKWebViewController.m */,
 			);
 			name = viewController;
 			sourceTree = "<group>";
@@ -111,6 +123,17 @@
 				3D8C84681D8982830020AB4A /* TYWKWebView.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		3D8C846B1D898E370020AB4A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3D8C846C1D898E4D0020AB4A /* TYWKMessageHandlers.h */,
+				3D8C846D1D898E4D0020AB4A /* TYWKMessageHandlers.m */,
+				3D8C846F1D898E5B0020AB4A /* TYWKConfiguration.h */,
+				3D8C84701D898E5B0020AB4A /* TYWKConfiguration.m */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +210,9 @@
 				3D8C844C1D8972200020AB4A /* AppDelegate.m in Sources */,
 				3D8C84691D8982830020AB4A /* TYWKWebView.m in Sources */,
 				3D8C84491D8972200020AB4A /* main.m in Sources */,
+				3D8C846E1D898E4D0020AB4A /* TYWKMessageHandlers.m in Sources */,
+				3D8C84741D899AA80020AB4A /* TYWKWebViewController.m in Sources */,
+				3D8C84711D898E5B0020AB4A /* TYWKConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

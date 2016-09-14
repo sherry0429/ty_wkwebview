@@ -7,24 +7,24 @@
 //
 
 #import "TYMainViewController.h"
-#import "TYWKWebView.h"
+#import "TYWKWebViewController.h"
 
 @interface TYMainViewController ()
 
-@property(nonatomic,strong)UITableView *TYTableView;
-@property(nonatomic,strong)TYWKWebView *webView;
+@property(nonatomic,strong)TYWKWebViewController *webviewController;
 
 @end
 
 @implementation TYMainViewController
 
 - (void)viewDidLoad {
-    _webView = [[TYWKWebView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
-    [_webView loadRequest:[NSURLRequest requestWithURL:url]];
-    [self.view addSubview:_webView];
+    _webviewController = [[TYWKWebViewController alloc]init];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [self.navigationController pushViewController:_webviewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
